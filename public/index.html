@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+    <div class="window bg-yellow-400 flex w-screen h-screen justify-center items-center">
+        <div class="main_part flex   items-center justify-center 
+          bg-blue-300 shadow-2xl shadow-red-800 my-10 min-w-[26rem]
+           xs:min-w-[26rem] xs:w-[28rem] md:w-[32rem] md:min-w-[32rem] h-[75vh] md:h-[85vh] xs:h-[80vh] rounded-xl">
+
+             <div id="puzzle-main" class="puzzle-main w-[360px] h-[360px] -->
+            bg-blue-200 flex flex-wrap border-10  border-blue-500">
+            </div>
+            <div class="img" id="img-main">
+                <img src="./level/bg_pic.png" class="w-[22rem] h-[18rem] xs:w-[22rem] md:w-[26rem] object-contain">
+                <ul class="btn-main flex-col items-center justify-center space-y-6 xs:space-y-3 xs:mt-2 mt-4" id="btn-main">
+                    <li class="text-center"> <button id="btn1"
+                            class="px-6 py-2 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">Play</button>
+                    </li>
+                    <li class="text-center"><button id="btn2"
+                            class="px-6 py-2 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">Puzzle</button>
+                    </li>
+                    <li class="text-center"><button id="btn3"
+                            class="px-6 py-2 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">Mute sound</button></li>
+                </ul>
+            </div>
+            <div class="level flex flex-wrap w-[22rem] xs:w-[24rem] md:w-[28rem] space-x-3 space-y-6" id="level">
+                <div class="place-self-end"><button id="level1"
+                        class="level_logo md:font-3xl px-8 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-red-600 hover:bg-red-700 active:bg-red-500 font-sans text-lg">level
+                        1</button></div>
+                <div><button id="level2"
+                        class="level_logo md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">level
+                        2</button></div>
+                <div><button id="level3"
+                        class="level_logo md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">level
+                        3</button></div>
+                <div><button id="level4"
+                        class="level_logo md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">level
+                        4</button></div>
+                <div><button id="level5"
+                        class="level_logo md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">level
+                        5</button></div>
+                <div><button id="level6"
+                        class="level_logo md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">level
+                        6</button></div>
+                <div><button id="level7"
+                        class="level_logo md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">level
+                        7</button></div>
+                <div><button id="level8"
+                        class="level_logo md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-purple-600 hover:bg-purple-700 active:bg-purple-500 font-sans text-lg">level
+                        8</button></div>
+                <div><button id="play_return"
+                        class="level_logo md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md shadow-stone-600 rounded-md bg-green-500 hover:bg-green-700 active:bg-green-400 font-sans text-lg">Return</button>
+                </div>
+            </div>
+            <div class="result flex-col space-y-5" id="result">
+                <div class="star flex justify-center">
+                    <img src="level/2_star.png" id="star_img"alt="" srcset="">
+                </div>
+                <h1 id="comment" class="font-semibold text-3xl capitalize font-serif text-center">Congrations  Solved!!</h1>
+                <div class="text-center"><button id="return_btn" class=" md:font-3xl px-6 py-4 md:text-2xl md:font-semibold shadow-md
+                 shadow-stone-600 rounded-md bg-green-500 hover:bg-green-700 active:bg-green-400
+                  font-sans text-lg">Main Menu</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="puzzle.js"></script>
+
+</html>
