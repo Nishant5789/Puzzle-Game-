@@ -24,6 +24,15 @@ var currTile;
 var otherTile; //blank tile
 var turns = 0;
 
+var audio = new Audio("/level/Game-Menu_Looping.mp3");
+
+window.onload = function() {
+    sound.innerText="Mute sound";
+    // console.log("play");
+    audio.play();
+  }
+  
+
 var originalorder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var imgOrder = ["4", "2", "8", "5", "1", "6", "7", "9", "3"];
 // var arr =  ["1", "2", "6", "4", "5", "3", "7", "8", "9"];
@@ -203,13 +212,42 @@ const start = () =>{
     // puzzle_screen.hidden=true;
     level_screen.style.display="none";
 }
+const mute_sound = () => {
+    // console.log(sound.innerText);
+    if(sound.innerText=="Mute sound")
+    {
+        // console.log("pause");
+        audio.pause();
+        sound.innerText="Unmute sound"
+    }
+    else if(sound.innerText=="Unmute sound")
+    {
+        // console.log("play");
+        audio.play();
+        sound.innerText="Mute sound"
+    }
+}
+
+const return_main_menu = ()=>{
+    console.log("return");
+    puzzle_screen.style.display="none";
+    // puzzle_screen.hidden=true;
+    screen.style.display="block";
+    level_screen.style.display="none";
+    result_screen.style.display="none";
+
+}
 
 play_btn.addEventListener("click", ()=>{board(0)});
+sound.addEventListener("click", ()=>{mute_sound()});
 puzzle_btn.addEventListener("click", ()=>{level(0)} );
 play_level1.addEventListener("click",()=>{board(0)} );
 play_level2.addEventListener("click",()=>{board(1)} );
 play_level3.addEventListener("click",()=>{board(2)} );
 play_level4.addEventListener("click",()=>{board(3)} );
 play_level5.addEventListener("click",()=>{board(4)} );
-return_btn.addEventListener("click",()=>{level(1)} );
+return_btn.addEventListener("click",()=>{return_main_menu()});
+play_return.addEventListener("click",()=>{return_main_menu()});
+
+
 
