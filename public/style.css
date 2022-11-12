@@ -480,18 +480,6 @@ video {
 .h-\[360px\] {
   height: 360px;
 }
-.h-\[12rem\] {
-  height: 12rem;
-}
-.h-\[rem\] {
-  height: rem;
-}
-.h-\[20rem\] {
-  height: 20rem;
-}
-.h-\[16rem\] {
-  height: 16rem;
-}
 .h-\[18rem\] {
   height: 18rem;
 }
@@ -500,9 +488,6 @@ video {
 }
 .w-\[360px\] {
   width: 360px;
-}
-.w-\[20rem\] {
-  width: 20rem;
 }
 .w-\[22rem\] {
   width: 22rem;
@@ -577,10 +562,6 @@ video {
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
-}
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .px-6 {
   padding-left: 1.5rem;
